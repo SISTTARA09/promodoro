@@ -40,7 +40,7 @@ buttonsParent.addEventListener("click", (ev) => {
 				minutes.dataset.continue = "24";
 			}
 			// cl(minutes.style.color)
-		}, 100);
+		}, 1000);
 		// WORK WITH PAUSE
 		pause.addEventListener("click", (ev) => {
 			clearInterval(secondsCounter);

@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.fieldset {
+  display: flex;
+  border: 3px solid #1177ee;
+  padding: 3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 320px;
+  margin: 100px auto;
+}
+.fieldset > .legend {
+  background-color: #1177ee;
+  padding: 0.1rem;
+  color: white;
+  border-radius: 0.2rem;
+}
+
+.parent {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 1rem;
+  margin: 50px auto;
+}
+.parent .duration-parent {
+  font-size: 3.5rem;
+}
+.parent .duration-parent .minutes {
+  color: #1177ee;
+}
+.parent .buttons-parent {
+  width: 100%;
+  display: flex;
+}
+.parent .buttons-parent * {
+  flex: 1;
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #1177ee;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+.parent .buttons-parent .pause {
+  display: none;
+}
+.parent .buttons-parent .reset {
+  display: none;
+  background-color: rgba(238, 17, 17, 0.3333333333);
+  color: white;
+  transition: 0.2s linear;
+}
+.parent .buttons-parent .reset:hover {
+  color: #ee1111;
+}/*# sourceMappingURL=style.css.map */

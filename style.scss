@@ -1,0 +1,65 @@
+// IMPORT COLORS FILE
+@use "./sass/colors/colors" as *;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+.fieldset {
+  display: flex;
+  border: 3px solid $blue;
+  padding: 3rem;
+  width: fit-content;
+	height: 320px;
+  margin: 100px auto;
+  > .legend {
+    background-color: $blue;
+    padding: .1rem;
+		color:white;
+		border-radius: .2rem;
+  }
+}
+.parent {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+  width: fit-content;
+	gap: 1rem;
+	margin: 50px auto;
+	.duration-parent {
+		font-size: 3.5rem;
+		.minutes {
+			color: $blue;
+		}
+	}
+	.buttons-parent {
+		width: 100%;
+		display: flex;
+		* {
+			flex: 1;
+			padding: 0.2rem;
+			border-radius: 0.5rem;
+			border: none;
+			background-color: $blue;
+			color: white;
+			cursor: pointer;
+			font-weight: bold;
+		}
+		.pause {
+			display: none;
+		}
+		.reset {
+			display: none;
+			background-color: $transparentRed;
+			color: white;
+      transition: .2s linear;
+		}
+		.reset:hover {
+			color: $red;
+		}
+	}
+}

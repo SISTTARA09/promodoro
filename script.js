@@ -27,7 +27,7 @@ buttonsParent.addEventListener("click", (ev) => {
 						setTimeout(() => {
 							$(minutes).css('color', '#1177ee')
 							minutes.textContent = minutes.dataset.continue;
-						}, 6000);
+						}, 58000);
 				} 
 				if (minutes.textContent == "24") minutes.setAttribute("data-rest", "5");
 				seconds.dataset.end = "59";
